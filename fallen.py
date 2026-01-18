@@ -54,7 +54,7 @@ def block_browser_requests():
 
 
 # ---------------- ANILLO 1 ----------------
-@app.route("/ring1", methods=["GET"])
+@app.route("/loader", methods=["GET"])
 def ring1():
 
     lua_payload = r'''
@@ -125,3 +125,4 @@ print("Carga completa.")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
